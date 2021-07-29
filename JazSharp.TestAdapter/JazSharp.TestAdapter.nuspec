@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
 <package >
-  <metadata>
-    <id>JazSharp.TestAdapter</id>
-    <version>1.0.0-rc.2</version>
-    <title>JazSharp</title>
-    <authors>Sea Millo</authors>
-    <owners>Sea Millo</owners>
-    <projectUrl>https://github.com/Sellorio/JazSharp</projectUrl>
-    <license type="file">License.txt</license>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package needs to be installed in order to execute JazSharp unit tests in visual studio and the dotnet command line.</description>
-    <releaseNotes>
-      Spies not working (#11), Member 'System.Object' is declared in another module... (#12), Interface return
-      types with default spy cause error (#10), removing hard-coded logs in test adapter (#7).
-    </releaseNotes>
-    <copyright>Copyright 2019</copyright>
-    <tags>C# csharp jasmine unit testing mock mocking spy</tags>
-    <dependencies>
-      <dependency id="JazSharp" version="1.0.0-rc.2" />
-      <dependency id="Microsoft.NET.Test.Sdk" version="16.2.0" />
-      <dependency id="Microsoft.TestPlatform.ObjectModel" version="16.2.0" />
-      <dependency id="System.ComponentModel.Composition" version="4.5.0" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="bin\Release\netcoreapp2.0\JazSharp.TestAdapter.dll" target="lib/netcoreapp2.0" />
-    <file src="JazSharp.TestAdapter.props" target="build" />
-    <file src="..\JazSharp\License.txt" target="" />
-  </files>
+	<metadata>
+		<id>JazSharp.TestAdapter5</id>
+		<version>0.0.1</version>
+		<title>JazSharp 5</title>
+		<authors>TreJon House</authors>
+		<owners>TreJon House</owners>
+		<projectUrl>https://github.com/codeCasa/JazSharp</projectUrl>
+		<license type="file">License.txt</license>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>This package needs to be installed in order to execute JazSharp unit tests in visual studio and the dotnet command line.</description>
+		<releaseNotes>
+			Spies not working (#11), Member 'System.Object' is declared in another module... (#12), Interface return
+			types with default spy cause error (#10), removing hard-coded logs in test adapter (#7).
+		</releaseNotes>
+		<copyright>Copyright 2019</copyright>
+		<tags>C# csharp jasmine unit testing mock mocking spy</tags>
+		<dependencies>
+			<dependency id="JazSharp5" version="0.0.1" />
+			<dependency id="Microsoft.NET.Test.Sdk" version="16.2.0" />
+			<dependency id="Microsoft.TestPlatform.ObjectModel" version="16.2.0" />
+			<dependency id="System.ComponentModel.Composition" version="4.5.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\Release\net5.0\JazSharp.TestAdapter.dll" target="lib/net5.0" />
+		<file src="JazSharp.TestAdapter.props" target="build" />
+		<file src="..\JazSharp\License.txt" target="" />
+	</files>
 </package>

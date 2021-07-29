@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>JazSharp</id>
-    <version>1.0.0-rc.2</version>
-    <title>JazSharp</title>
-    <authors>Sea Millo</authors>
-    <owners>Sea Millo</owners>
-    <projectUrl>https://github.com/Sellorio/JazSharp</projectUrl>
-    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <id>JazSharp5</id>
+    <version>0.0.1</version>
+    <title>JazSharp 5</title>
+    <authors>TreJon House</authors>
+    <owners>TreJon House</owners>
+    <projectUrl>https://github.com/codeCasa/JazSharp</projectUrl>
     <license type="file">License.txt</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>
@@ -19,7 +18,7 @@
       Spies not working (#11), Member 'System.Object' is declared in another module... (#12), Interface return
       types with default spy cause error (#10), removing hard-coded logs in test adapter (#7).
     </releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <copyright>Copyright 2021</copyright>
     <tags>C# csharp jasmine unit testing mock mocking spy</tags>
     <dependencies>
       <dependency id="Mono.Cecil" version="0.10.4" />
@@ -29,8 +28,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\netstandard2.0\JazSharp.dll" target="lib\netstandard2.0" />
-    <file src="bin\Release\netstandard2.0\JazSharp.xml" target="lib\netstandard2.0" />
+    <file src="bin\Release\netstandard2.1\JazSharp.dll" target="lib\netstandard2.1" />
+    <file src="bin\Release\netstandard2.1\JazSharp.xml" target="lib\netstandard2.1" />
     <file src="License.txt" target="" />
   </files>
 </package>

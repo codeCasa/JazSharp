@@ -12,7 +12,7 @@ namespace JazSharp
 {
     /// <summary>
     /// The main entry class for the JazSharp framework. This class exposes features including
-    /// <see cref="SpyOn(object, string)"/>, <see cref="CurrentTest"/>, <see cref="Any"/>
+    /// <see cref="SpyOn(object, string)"/>, <see cref="Any"/>
     /// and <see cref="CreateSpy(out Spy)"/> and similar.
     /// </summary>
     public static class Jaz

@@ -11,11 +11,15 @@ namespace JazSharp.TestAdapter
     [FileExtension(".exe")]
     [DefaultExecutorUri(TestAdapterConstants.ExecutorUriString)]
     [ExtensionUri(TestAdapterConstants.ExecutorUriString)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public sealed class TestDiscoverer : ITestDiscoverer, IDisposable
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
         private TestCollection _testCollection;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public void DiscoverTests(IEnumerable<string> sources, IDiscoveryContext discoveryContext, IMessageLogger logger, ITestCaseDiscoverySink discoverySink)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             Dispose();
 
@@ -28,7 +32,9 @@ namespace JazSharp.TestAdapter
             }
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public void Dispose()
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             if (_testCollection != null)
             {

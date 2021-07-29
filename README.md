@@ -30,10 +30,15 @@
   - [Build and run](#buildAndRun)
   - [Map](#devMap)
 
+
+## Notes
+This repro is a fork of the original [JazSharp](https://github.com/Sellorio/JazSharp) repository. 
+And is being maintained without huge investments.
+
 <a id="prereqs"></a>
 ## Prerequisites
 
-- .NET Core 2.2 Runtime
+- .NET 5 Runtime
 
 <a id="intro"></a>
 ## Introduction

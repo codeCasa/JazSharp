@@ -14,11 +14,15 @@ namespace JazSharp.TestAdapter
     [FileExtension(".exe")]
     [DefaultExecutorUri(TestAdapterConstants.ExecutorUriString)]
     [ExtensionUri(TestAdapterConstants.ExecutorUriString)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class TestExecutor : ITestExecutor
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
         private TestRun _testRun;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public void Cancel()
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             if (_testRun != null)
             {
@@ -26,7 +30,9 @@ namespace JazSharp.TestAdapter
             }
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public void RunTests(IEnumerable<TestCase> tests, IRunContext runContext, IFrameworkHandle frameworkHandle)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             var testsList = tests.ToList();
             var testCollection = TestCollection.FromSources(testsList.Select(x => x.Source).Distinct());
@@ -42,7 +48,9 @@ namespace JazSharp.TestAdapter
             ExecuteTestRun(testCollection, frameworkHandle, testMapping);
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public void RunTests(IEnumerable<string> sources, IRunContext runContext, IFrameworkHandle frameworkHandle)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             var testCollection = TestCollection.FromSources(sources);
             ExecuteTestRun(testCollection, frameworkHandle, testCollection.Tests.ToDictionary(x => x, x => x.ToTestCase()));
